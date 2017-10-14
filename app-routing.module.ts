@@ -6,7 +6,10 @@ import { NgModule } from '@angular/core';
 			const routes:Routes=[
 			     {path:'add',component:AddComponent},
 			      {path:'view',component:ViewComponent},
-				      {path:'add/:id',component:AddDetailComponent}
+		             {path:'add/:id',component:AddDetailComponent},
+			     { path: '', redirectTo: 'home', pathMatch: 'full' },
+                             { path: '**', component: ErrorComponent }
+];
 			]
 			
 			@NgModule({
